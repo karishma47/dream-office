@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+.banner
+{
+    border:2px solid red;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url(office.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar
+{
+   
+    margin:auto;
+    padding: 35px 0;
+
+}
+.navbar li{
+    float:left;
+    text-align: center;
+    padding-right:10%;
+    list-style:none;
+    padding-left:5%;
+  
+
+
+
+}
+.navbar li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color:white;
+    font-weight:bold;
+   
+
+}
+.navbar li a:hover
+{
+    color:cyan;
+    transition: 3s;
+}
+.content
+{
+   width:100%;
+   position: absolute; 
+   top:50%;
+   text-align: center;
+   color: white;
+   top:30%;
+}
+.content h1
+{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.content h1:hover
+{
+    color: aquamarine;
+    transition: 3s;
+}
+.content p
+{
+    font-size: 15px;
+}
+button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px;
+    border-radius:20px;
+    font-weight: bold;
+    border:2px solid cyan;
+    background: transparent;
+    color: white;
+    cursor:pointer;
+}

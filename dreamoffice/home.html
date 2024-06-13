@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <main>
+        <section id="welcome">
+            <h1>Welcome to Your Dream Office</h1>
+            <p>Where creativity meets productivity.</p>
+        </section>
+        <section id="carousel">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="image1.jpg" alt="Image 1">
+                </div>
+                <div class="slide fade">
+                    <img src="image2.jpg" alt="Image 2">
+                </div>
+                <div class="slide fade">
+                    <img src="image3.jpg" alt="Image 3">
+                </div>
+                
+            </div>
+        </section>
+        <section id="highlights">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Flexible workspaces</li>
+                <li>State-of-the-art technology</li>
+                <li>Networking opportunities</li>
+                <li>Wellness programs</li>
+            </ul>
+            <p>Explore our amenities and services to discover how Your Dream Office can elevate your work experience.</p>
+        </section>
+    </main>
+    
+        
+        <script>
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                let slides = document.getElementsByClassName("slide");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change slide every 2 seconds
+            }
+        </script>
+    
+    
+</body>
+</html>
